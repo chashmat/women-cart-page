@@ -1,0 +1,63 @@
+*{
+    font-family: 'Montserrat',arial;
+}
+
+#searchContentContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20vw;
+}
+
+.product-box{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border: 1px solid rgba(158, 158, 158, 0.158);
+    margin: 5px;
+    flex-shrink: 0;
+    margin: 10px;
+}
+.product-image{
+    width: 20vw;
+}
+.product-name{
+    font-family: 'Roboto slab',arial;
+    font-size: 13px;
+    padding: 10px;
+}
+.product-price{
+    color:var(--color);
+    font-weight: bold;
+    padding: 10px;
+}
+.product-rating{
+    color: rgb(255, 166, 0);
+}
+.product-brand{
+    color: rgb(52,167,191);
+    padding: 4px 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 770px) {
+    #searchContentContainer {
+        width: 33vw;
+    }
+    .product-image {
+        width: 43vw;
+    }
+    .product-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    #searchContentContainer {
+        width: 48vw;
+    }
+    .product-image {
+        width: 82vw;
+    }
+}
